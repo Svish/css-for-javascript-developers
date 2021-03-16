@@ -1,0 +1,11 @@
+{
+  "name": "css-for-js-flow-layout",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "vite"
+  },
+  "dependencies": {
+    "vite": "^2.1.1"
+  }
+}
