@@ -40,14 +40,17 @@ html {
   --spacing-6: 64px;
   --spacing-7: 96px;
   --spacing-8: 128px;
-  --spacing-inline: var(--spacing-3);
+
+  --max-width-wrapper-padding-inline: var(--spacing-3);
 }
 
 /* Base */
 body {
   background-color: var(--gray-5);
+
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-normal);
+  line-height: 1.4;
 }
 
 h1,
@@ -58,6 +61,7 @@ h2 {
 .max-width-wrapper {
   max-width: 34rem;
   margin-inline: auto;
+  padding-inline: var(--max-width-wrapper-padding-inline);
 }
 
 /* Header */
@@ -68,7 +72,6 @@ header {
   border-bottom: var(--spacing-1) solid var(--gray-4);
 
   padding-block: var(--spacing-7) var(--spacing-3);
-  padding-inline: var(--spacing-inline);
 }
 
 /* Intro chunk */
@@ -89,7 +92,6 @@ header {
 /* Main */
 main {
   padding-block: var(--spacing-6);
-  padding-inline: var(--spacing-inline);
 }
 
 /* Card */
@@ -98,8 +100,8 @@ main {
   border-bottom: var(--spacing-1) solid var(--gray-4);
 
   padding-block: var(--spacing-1);
-  padding-inline: var(--spacing-inline);
-  margin-inline: calc(-1 * var(--spacing-inline));
+  padding-inline: var(--max-width-wrapper-padding-inline);
+  margin-inline: calc(-1 * var(--max-width-wrapper-padding-inline));
 }
 
 .card .indented-heading {
