@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "degit": "^2.8.0",
+    "prettier": "^2.2.1"
+  }
+}
