@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add styles here! */
+
+/* Design tokens */
+html {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-lighter: hsl(45deg, 100%, 50%);
+  --secondary-darker: hsl(45deg, 100%, 40%);
+
+  --gray-1: hsl(0deg, 0%, 0%);
+  --gray-2: hsl(0deg, 0%, 10%);
+  --gray-3: hsl(0deg, 0%, 30%);
+  --gray-4: hsl(0deg, 0%, 40%);
+  --gray-5: hsl(0deg, 0%, 60%);
+  --gray-6: hsl(0deg, 0%, 100%);
+
+  --font-size-1: 1rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1.5rem;
+  --font-size-4: 2rem;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 900;
+
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+  --spacing-6: 64px;
+  --spacing-7: 96px;
+  --spacing-8: 128px;
+  --spacing-inline: var(--spacing-3);
+}
+
+/* Base */
+body {
+  background-color: var(--gray-5);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-normal);
+}
+
+h1,
+h2 {
+  font-weight: var(--font-weight-bold);
+}
+
+.max-width-wrapper {
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+/* Header */
+header {
+  font-size: var(--font-size-2);
+
+  background-color: var(--gray-6);
+  border-bottom: var(--spacing-1) solid var(--gray-4);
+
+  padding-block: var(--spacing-7) var(--spacing-3);
+  padding-inline: var(--spacing-inline);
+}
+
+/* Intro chunk */
+.intro-chunk {
+  max-width: 24rem;
+}
+
+.intro-chunk .title {
+  font-size: var(--font-size-4);
+
+  margin-block: 0 var(--spacing-5);
+}
+
+.intro-chunk strong {
+  color: var(--primary);
+}
+
+/* Main */
+main {
+  padding-block: var(--spacing-6);
+  padding-inline: var(--spacing-inline);
+}
+
+/* Card */
+.card {
+  background-color: var(--gray-6);
+  border-bottom: var(--spacing-1) solid var(--gray-4);
+
+  padding-block: var(--spacing-1);
+  padding-inline: var(--spacing-inline);
+  margin-inline: calc(-1 * var(--spacing-inline));
+}
+
+.card .indented-heading {
+  font-size: var(--font-size-3);
+
+  background-color: var(--secondary-lighter);
+  border-bottom: var(--spacing-1) solid var(--secondary-darker);
+
+  width: fit-content;
+  padding-block: var(--spacing-2);
+  padding-inline: var(--spacing-4);
+  margin-block: 0;
+  margin-left: calc(-1 * var(--spacing-4));
+}
